@@ -1,0 +1,18 @@
+/*
+Continuando con el desafío anterior, te ofrece una oportunidad de crear una diversión recursiva para resolver un problema.
+
+Hemos definido una diversión llamada rangeOfNumbers con dos parámetros. La función de ser devolvente un arreglo de enteros que comienza con el número representado por el parámetro startNum y termina con el número representado por el parámetro endNum. El número inicial será siempre menor o igual que el número final. Tu diversión de ser utilizada recursión, lamándose a sí mismo, y no utilizar bucles de ningún tipo. También debe funcionar en el caso que startNum y endNum sean iguales.
+
+
+*/
+
+
+function rangeOfNumbers(startNum, endNum) {
+ if (endNum < startNum) {
+    return [];
+  } else {
+    const numbers = rangeOfNumbers(startNum, endNum - 1);
+    numbers.push(endNum);
+    return numbers;
+  }
+};
