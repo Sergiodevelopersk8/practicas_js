@@ -1,12 +1,32 @@
 {
   "clientes": [
     {
-      "nombre": "Sergio NUEVO!",
-      "email": "correo2@correo.com",
-      "telefono": "12",
-      "empresa": "12212",
-      "id": 26
+      "nombre": "SERGIO",
+      "email": "cyberazteck8@gmail.com",
+      "telefono": "2211421023",
+      "empresa": "smc",
+      "id": 27
+    },
+    {
+      "nombre": "Kiernan Shipka",
+      "email": "kiki@gmail.com",
+      "telefono": "22111421026",
+      "empresa": "kiki corp",
+      "id": 28
+    },
+    {
+      "nombre": "kitty",
+      "email": "kittymerino@hotmail.com",
+      "telefono": "55555555",
+      "empresa": "kittycat",
+      "id": 29
+    },
+    {
+      "nombre": "Fedelobo wolf",
+      "email": "fedelobo1@gmail.com",
+      "telefono": "5555578",
+      "empresa": "la pension",
+      "id": 30
     }
   ]
 }
-

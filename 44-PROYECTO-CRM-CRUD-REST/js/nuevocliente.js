@@ -1,8 +1,10 @@
+import { mostrarAlerta,validar } from './funciones.js'
+import { nuevoCliente } from './API.js';
 (function(){
 const formulario = document.querySelector('#formulario');
 formulario.addEventListener('submit',validarCliente);
 
-function validarCliente(){
+function validarCliente(e){
     e.preventDefault();
 
     const nombre = document.querySelector('#nombre').value;
@@ -15,17 +17,16 @@ const cliente = {
     telefono,
     empresa
 }
-// console.log(Object.values(cliente).every(input => input !== ''));
+
     if(validar(cliente)){
-        console.log("todos los campos son pbligatorios");
+        mostrarAlerta("todos los campos son pbligatorios");
+        return;
     }
-    console.log("todos correcto");
+  nuevoCliente(cliente)
     
 }
 
-function validar(obj){
-    return !Object.values(obj).every(input=> input!=='')
-}
+
 
 
 
